@@ -1,2 +1,2 @@
 # HomeAssistant-Configs
-My HomeAssistant Example Configuration Files
+My HomeAssistant Example Config Files
