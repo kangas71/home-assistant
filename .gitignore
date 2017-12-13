@@ -1,11 +1,6 @@
 *
 !*.yaml
 !.gitignore
-deps
-home-assistant.log
-home-assistant_v2.db
-.ios.conf
-plex.conf
-tts
+!README.md
 secrets.yaml
 known_devices.yaml
