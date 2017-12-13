@@ -1,0 +1,7 @@
+- platform: asuswrt
+  host: !secret device_asus_ip
+  username: !secret device_username
+  password: !secret device_password    
+  interval_seconds: 12
+  consider_home: 180
+  track_new_devices: yes

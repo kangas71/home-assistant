@@ -1,0 +1,78 @@
+## Views
+## Note: Comment out default_view section to see ALL
+default_view:
+  view: yes
+  icon: mdi:home 
+  entities:    
+    - group.weather
+    - group.family
+    - group.devices
+light_view:
+  view: yes
+  icon: mdi:lightbulb
+  entities:
+network_view:
+  view: yes
+  icon: mdi:server-network
+  entities:
+    - group.pihole
+    - group.speedtest
+    - group.netdata
+settings_view:
+  view: yes
+  icon: mdi:settings
+  entities:
+
+## Groups
+family:
+  name: Family
+  entities:
+    - device_tracker.rkangasiphone6s
+    - device_tracker.rkangasipadpro
+    - device_tracker.beckasnexus5x
+    - device_tracker.beckasipad
+    - device_tracker.shelbyspixel
+devices:
+    name: Devices
+    entities:
+      - known_devices.iphone6s_battery_level
+      - known_devices.iphone6s_battery_state
+      - known_devices.ipadpro10_battery_level
+      - known_devices.ipadpro10_battery_state
+netdata:
+  name: NetData
+  entities:
+    - sensor.plex_system_load
+    - sensor.plex_system_io_in
+    - sensor.plex_system_io_out
+    - sensor.omv_system_load
+    - sensor.omv_system_io_in
+    - sensor.omv_system_io_out
+weather:
+  name: DarkSky Weather
+  entities:
+    - sensor.dark_sky_summary
+    - sensor.dark_sky_temperature
+    - sensor.dark_sky_nearest_storm_distance
+    - sensor.dark_sky_wind_speed
+    - sensor.dark_sky_wind_bearing
+    - sensor.dark_sky_humidity
+    - sensor.dark_sky_pressure
+    - sensor.dark_sky_visibility
+    - sensor.dark_sky_hourly_summary
+    - sensor.dark_sky_daily_summary
+waqi:
+  name: Air Quality Index
+  entities:
+    - sensor.waqi
+pihole:
+  name: Pi-Hole
+  entities:
+    - sensor.pihole_dns_queries_today
+    - sensor.pihole_ads_blocked_today
+speedtest:
+  name: Speedtest
+  entities:
+    - sensor.speedtest_ping
+    - sensor.speedtest_download
+    - sensor.speedtest_upload

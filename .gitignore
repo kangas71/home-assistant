@@ -1,0 +1,11 @@
+*
+!*.yaml
+!.gitignore
+deps
+home-assistant.log
+home-assistant_v2.db
+.ios.conf
+plex.conf
+tts
+secrets.yaml
+known_devices.yaml

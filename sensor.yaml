@@ -1,0 +1,48 @@
+- platform: darksky
+  api_key: !secret sensor_darksky
+  monitored_conditions:
+    - summary
+    - temperature
+    - nearest_storm_distance
+    - wind_speed
+    - wind_bearing
+    - humidity
+    - pressure
+    - visibility
+    - hourly_summary
+    - daily_summary
+
+- platform: waqi
+  token: !secret sensor_waqi
+  locations:
+    - !secret sensor_location
+  stations:
+    - !secret sensor_station
+
+- platform: pi_hole
+  host: !secret sensor_pihole_ip
+  monitored_conditions:
+    - dns_queries_today
+    - ads_blocked_today
+
+- platform: speedtest
+  monitored_conditions:
+    - ping
+    - download
+    - upload
+
+#- platform: netdata
+#  host: !secret sensor_plex_ip
+#  name: plex
+#  resources:
+#    - system_load
+#    - system_io_in
+#    - system_io_out
+
+- platform: netdata
+  host: !secret sensor_omv_ip
+  name: omv
+  resources:
+    - system_load
+    - system_io_in
+    - system_io_out
