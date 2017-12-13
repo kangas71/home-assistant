@@ -66,6 +66,6 @@ ifttt:
 # Include these directories and files
 automation: !include_dir_merge_list automation
 device_tracker: !include device_tracker.yaml
-group: !include group.yaml
+group: !include groups.yaml
 notify: !include notify.yaml
 sensor: !include sensor.yaml
