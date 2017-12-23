@@ -1,4 +1,4 @@
-# HomeAssistant-Configs
+# HomeAssistant Configuration Files
 
 Just starting to get things setup. I will be adding more configs and screenshots in the near future.
 
