@@ -4,7 +4,7 @@ Just starting to get things setup. I will be adding more configs and screenshots
 
 *NOTE: I've excluded secrets.yaml and known_devices.yaml for privacy/security*
 
-### Home Screen
+## Home Screen
 1. **Family**
   * This shows who's home. Uses the following configuration files ...
     1. device_tracking.yaml
@@ -18,7 +18,7 @@ Just starting to get things setup. I will be adding more configs and screenshots
 
 ![alt text](screenshots/home_screen.png "Home Screen View")    
 
-### Server Screen
+## Server Screen
 1. **NetData**
   * Shows stats from home storage server. Uses the following configuration files ...
     1. sensor.yaml
