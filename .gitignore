@@ -2,5 +2,6 @@
 !*.yaml
 !.gitignore
 !README.md
+!screenshots
 secrets.yaml
 known_devices.yaml
