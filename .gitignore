@@ -1,5 +1,6 @@
 *
 !*.yaml
+!*.png
 !.gitignore
 !README.md
 !screenshots
