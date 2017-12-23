@@ -15,6 +15,7 @@ Just starting to get things setup. Will add more configs and screenshots as I go
   * Shows weather at home location. Uses the following configuration files ...
     1. sensor.yaml
     2. groups.yaml
+
 ![alt text](screenshots/home_screen.png "Home Screen View")    
 
 ### Server Screen
@@ -32,6 +33,7 @@ Just starting to get things setup. Will add more configs and screenshots as I go
   * Shows speedtest.net stats. Uses the following configuration files ...
     1. sensor.yaml
     2. groups.yaml
+
 ![alt text](screenshots/server_screen.png "Server Screen View")
 
 ### Coming Soon:
