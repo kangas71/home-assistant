@@ -2,8 +2,6 @@
 
 Just starting to get things setup. I will be adding more configs and screenshots in the near future.
 
-*NOTE: I've excluded secrets.yaml and known_devices.yaml for privacy/security*
-
 ## Home Screen
 1. **Family**
   * This shows who's home. Uses the following configuration files ...
@@ -40,4 +38,7 @@ Just starting to get things setup. I will be adding more configs and screenshots
 * Z-Wave Plus stick
 * Z-Wave Plus switch
 * Z-Wave Plus plugs
-* Automation with lights and etc.        
+* Automation with lights and etc.     
+
+
+(*NOTE: I've excluded secrets.yaml and known_devices.yaml for privacy/security*)   
