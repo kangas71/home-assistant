@@ -1,6 +1,6 @@
 # HomeAssistant-Configs
 
-Just starting to get things setup. Will add more configs and screenshots as I go.
+Just starting to get things setup. I will be adding more configs and screenshots in the near future.
 
 *NOTE: I've excluded secrets.yaml and known_devices.yaml for privacy/security*
 
