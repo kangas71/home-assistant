@@ -18,7 +18,7 @@ Just starting to get things setup. I will be adding more configs and screenshots
 * **Z-Wave Devices:**
 * <a href="http://a.co/fFQtnuG">Aeotec Z-Stick Gen5 (ZW090)</a>
 * <a href="http://a.co/eMdNBfE">Aeotec Smart Switch 6 (ZW096)</a>
-* <a href="https://www.bestbuy.com/site/ge-z-wave-plus-wireless-smart-plug-in-dimmer-switch-white/6068002.p?skuId=6068002">GE - Z-Wave Plus Wireless Smart Plug-In Dimmer Switch (ZW3106) w/Two independently controlled Z-wave enabled outlets</a>
+* <a href="https://www.bestbuy.com/site/ge-z-wave-plus-wireless-smart-plug-in-dimmer-switch-white/6068002.p?skuId=6068002">GE - Z-Wave Plus Smart Plug Dimmer Switch (ZW3106) w/Two independently controlled outlets</a>
 
 ## Home Screen
 
