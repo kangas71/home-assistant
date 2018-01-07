@@ -1,9 +1,10 @@
 *
-!*.yaml
-!*.png
-!.gitignore
-!README.md
+!automations
 !screenshots
+!README.md
+!.gitignore
+!*.png
+!*.yaml
 secrets.yaml
 known_devices.yaml
 .DS_Store
