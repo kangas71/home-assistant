@@ -19,6 +19,10 @@ homeassistant:
 # Enables the frontend
 frontend:
 
+# Add cloud configuration
+cloud:
+  alexa: !include alexa.yaml
+
 # Enables configuration UI
 config:
 

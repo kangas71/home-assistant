@@ -1,0 +1,18 @@
+filter:
+  include_entities:  
+    - light.ge_zw3106_smart_dimmer_28175_level_3
+    - light.ge_zw3106_smart_dimmer_28175_level_2
+    - switch.aeotec_zw096_smart_switch_6_switch
+  include_domains:
+    - alert
+    - automation
+    - cover
+    - fan
+    - media_player
+  exclude_entities:
+    - device_tracker.iphone6s
+    - device_tracker.beckasnexus5x
+    - device_tracker.shelbyspixel
+  exclude_domains:
+    - script
+    - lock
