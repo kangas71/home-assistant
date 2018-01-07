@@ -10,6 +10,8 @@ homeassistant:
   unit_system: imperial
   # Pick yours from here: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
   time_zone: America/Denver
+  # Include customizations
+  customize: !include customize.yaml
 
 # Show links to resources in log and frontend
 #introduction:
@@ -64,8 +66,9 @@ ifttt:
   key: !secret config_ifttt
 
 # Include these directories and files
-automation: !include_dir_merge_list automation
+automation: !include_dir_merge_list automations
 device_tracker: !include device_tracker.yaml
 group: !include groups.yaml
 notify: !include notify.yaml
 sensor: !include sensor.yaml
+zwave: !include zwave.yaml

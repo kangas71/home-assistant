@@ -1,0 +1,81 @@
+# Device Trackers
+device_tracker.iphone6s:
+  hidden: false
+device_tracker.rkangasipadpro:
+  hidden: true
+
+# Order Groups
+group.weather:
+  order: 1
+
+# Lights
+light.ge_zw3106_smart_dimmer_28175_level_1:
+  friendly_name: Both Lights
+  hidden: true
+light.ge_zw3106_smart_dimmer_28175_level_2:
+  friendly_name: Light 2
+  hidden: false
+light.ge_zw3106_smart_dimmer_28175_level_3:
+  friendly_name: Light 1
+  hidden: false
+
+# Media Players
+media_player.bedroom:
+  friendly_name: Shelby's Roku Stick+
+  volume_level: 1
+media_player.roku_4:
+  friendly_name: Bedroom Roku 4
+  volume_level: 1
+media_player.apple_tv:
+  friendly_name: Office Apple TV
+  volume_level: 1
+remote.apple_tv:
+  friendly_name: Apple TV Remote
+
+# Sensors
+sensor.aeotec_zw096_smart_switch_6_current:
+  friendly_name: Fan Current
+  icon: mdi:fan
+  hidden: false
+sensor.aeotec_zw096_smart_switch_6_energy:
+  friendly_name: Fan Energy
+  icon: mdi:fan
+  hidden: false
+sensor.aeotec_zw096_smart_switch_6_power:
+  friendly_name: Fan Power
+  icon: mdi:fan
+  hidden: false
+sensor.aeotec_zw096_smart_switch_6_previous_reading:
+  friendly_name: Fan Previous Reading
+  icon: mdi:fan
+  hidden: false
+sensor.aeotec_zw096_smart_switch_6_voltage:
+  friendly_name: Fan Voltage
+  icon: mdi:fan
+  hidden: false
+sensor.rkangas_iphone6s_battery_level:
+  friendly_name: iPhone 6s Battery Level
+  hidden: true
+sensor.rkangas_iphone6s_battery_state:
+  friendly_name: iPhone 6s Battery State
+  hidden: true
+sensor.rkangas_ipadpro_battery_level:
+  friendly_name: iPad Pro 10.5 Battery Level
+  hidden: true
+sensor.rkangas_ipadpro_battery_state:
+  friendly_name: iPad Pro 10.5 Battery State
+  hidden: true
+sensor.waqi:
+  friendly_name: World Air Quality Index
+  hidden: true
+
+# Sun
+sun.sun:
+  friendly_name: Sun
+  hidden: true
+
+# Switches
+switch.aeotec_zw096_smart_switch_6_switch:
+  friendly_name: Fan
+  icon: mdi:fan
+  hidden: false

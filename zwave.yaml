@@ -1,0 +1,32 @@
+usb_path: /dev/ttyACM0
+device_config:
+  light.ge_zw3106_smart_dimmer_28175_level_1:
+    polling_intensity: 1
+    refresh_value: 2
+    delay: 3
+  light.ge_zw3106_smart_dimmer_28175_level_2:
+    polling_intensity: 1
+    refresh_value: 2
+    delay: 3
+  light.ge_zw3106_smart_dimmer_28175_level_3:
+    polling_intensity: 1
+    refresh_value: 2
+    delay: 3
+  sensor.aeotec_zw096_smart_switch_6_current:
+    polling_intensity: 0
+    ignored: false
+  sensor.aeotec_zw096_smart_switch_6_energy:
+    polling_intensity: 0
+    ignored: false
+  sensor.aeotec_zw096_smart_switch_6_power:
+    polling_intensity: 0
+    ignored: false
+  sensor.aeotec_zw096_smart_switch_6_previous_reading:
+    polling_intensity: 0
+    ignored: false
+  sensor.aeotec_zw096_smart_switch_6_voltage:
+    polling_intensity: 0
+    ignored: false
+  switch.aeotec_zw096_smart_switch_6_switch:
+    polling_intensity: 0
+    ignored: false

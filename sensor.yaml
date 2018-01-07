@@ -12,25 +12,6 @@
     - hourly_summary
     - daily_summary
 
-- platform: waqi
-  token: !secret sensor_waqi
-  locations:
-    - !secret sensor_location
-  stations:
-    - !secret sensor_station
-
-- platform: pi_hole
-  host: !secret sensor_pihole_ip
-  monitored_conditions:
-    - dns_queries_today
-    - ads_blocked_today
-
-- platform: speedtest
-  monitored_conditions:
-    - ping
-    - download
-    - upload
-
 #- platform: netdata
 #  host: !secret sensor_plex_ip
 #  name: plex
@@ -46,3 +27,20 @@
     - system_load
     - system_io_in
     - system_io_out
+
+- platform: pi_hole
+  host: !secret sensor_pihole_ip
+  monitored_conditions:
+    - dns_queries_today
+    - ads_blocked_today
+
+- platform: speedtest
+  monitored_conditions:
+    - ping
+    - download
+    - upload
+
+- platform: waqi
+  token: !secret sensor_waqi
+  locations:
+    - !secret sensor_location

@@ -1,44 +1,39 @@
-## Views
-## Note: Comment out default_view section to see ALL
-default_view:
-  view: yes
-  icon: mdi:home 
-  entities:    
-    - group.weather
-    - group.family
-    - group.devices
-light_view:
-  view: yes
-  icon: mdi:lightbulb
-  entities:
-network_view:
-  view: yes
-  icon: mdi:server-network
-  entities:
-    - group.pihole
-    - group.speedtest
-    - group.netdata
-settings_view:
-  view: yes
-  icon: mdi:settings
-  entities:
-
 ## Groups
+battery:
+  name: Batteries
+  entities:
+    - sensor.rkangas_iphone6s_battery_level
+    - sensor.rkangas_iphone6s_battery_state
+    - sensor.rkangas_ipadpro_battery_level
+    - sensor.rkangas_ipadpro_battery_state
+bedroom1:
+  name: Master Bedroom
+  entities:
+    - light.ge_zw3106_smart_dimmer_28175_level_3
+    - light.ge_zw3106_smart_dimmer_28175_level_2
+    - switch.aeotec_zw096_smart_switch_6_switch
+energy:
+  name: Energy Usage
+  entities:
+    - sensor.aeotec_zw096_smart_switch_6_current
+    - sensor.aeotec_zw096_smart_switch_6_energy
+    - sensor.aeotec_zw096_smart_switch_6_power
+    - sensor.aeotec_zw096_smart_switch_6_previous_reading
+    - sensor.aeotec_zw096_smart_switch_6_voltage
 family:
   name: Family
   entities:
-    - device_tracker.rkangasiphone6s
-    - device_tracker.rkangasipadpro
+    - device_tracker.iphone6s
     - device_tracker.beckasnexus5x
-    - device_tracker.beckasipad
     - device_tracker.shelbyspixel
-devices:
-    name: Devices
-    entities:
-      - known_devices.iphone6s_battery_level
-      - known_devices.iphone6s_battery_state
-      - known_devices.ipadpro10_battery_level
-      - known_devices.ipadpro10_battery_state
+media_player:
+  name: Media Players
+  entities:
+    - remote.apple_tv
+    - media_player.bedroom
+    - media_player.roku_4
+    - media_player.apple_tv
+    - media_player.chromecast
 netdata:
   name: NetData
   entities:
@@ -48,8 +43,19 @@ netdata:
     - sensor.omv_system_load
     - sensor.omv_system_io_in
     - sensor.omv_system_io_out
+pihole:
+  name: Pi-Hole
+  entities:
+    - sensor.pihole_dns_queries_today
+    - sensor.pihole_ads_blocked_today
+speedtest:
+  name: Internet Speeds
+  entities:
+    - sensor.speedtest_ping
+    - sensor.speedtest_download
+    - sensor.speedtest_upload
 weather:
-  name: DarkSky Weather
+  name: Weather
   entities:
     - sensor.dark_sky_summary
     - sensor.dark_sky_temperature
@@ -59,20 +65,38 @@ weather:
     - sensor.dark_sky_humidity
     - sensor.dark_sky_pressure
     - sensor.dark_sky_visibility
+    - sensor.waqi_davis_utah
     - sensor.dark_sky_hourly_summary
     - sensor.dark_sky_daily_summary
-waqi:
-  name: Air Quality Index
+
+## Views
+## Note: Comment out default_view section to see ALL
+default_view:
+  view: yes
+  icon: mdi:home 
+  entities:    
+    - group.weather
+    - group.family
+light_view:
+  view: yes
+  icon: mdi:lightbulb
   entities:
-    - sensor.waqi
-pihole:
-  name: Pi-Hole
+    - group.bedroom1
+media_player_view:
+  view: yes
+  icon: mdi:television
   entities:
-    - sensor.pihole_dns_queries_today
-    - sensor.pihole_ads_blocked_today
-speedtest:
-  name: Speedtest
+    - group.media_player
+network_view:
+  view: yes
+  icon: mdi:server-network
   entities:
-    - sensor.speedtest_ping
-    - sensor.speedtest_download
-    - sensor.speedtest_upload
+    - group.battery
+    - group.energy
+    - group.netdata
+    - group.pihole
+    - group.speedtest
+settings_view:
+  view: yes
+  icon: mdi:settings
+  entities:
