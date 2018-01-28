@@ -3,10 +3,8 @@
 Just starting to get things setup. I will be adding more configs and screenshots in the near future.
 
 **Current Devices:**
-* **HomeAssistant Machine Specs: (Running hardware and software)**
-* <a href="http://www.notebookreview.com/notebookreview/dell-inspiron-e1505-review-pics-specs/">DELL Inspiron e1505 (2006 Model)</a>
-* <a href="https://www.ubuntu.com/download/server">Ubuntu Server 16.04 LTS</a>
-* <a href="https://home-assistant.io/docs/installation/virtualenv/">HomeAssistant installed in Python virtual environment</a>
+* **HomeAssistant Software:**
+* <a href="https://home-assistant.io/docs/installation/docker/">HomeAssistant Docker Container</a>
 * **Media Players:**
 * <a href="https://www.macworld.com/article/1154446/home-players/appletv2-review.html">Apple TV (2nd generation, late 2010)</a>
 * <a href="https://www.androidcentral.com/sites/androidcentral.com/files/styles/xlarge_wm_brw/public/article_images/2014/04/chromecast_box_dongle.jpg?itok=9D3HQaD5">Google Chromecast (1st generation)</a>
@@ -34,10 +32,9 @@ Just starting to get things setup. I will be adding more configs and screenshots
 
 ## Network Monitoring Screen
 
-![alt text](screenshots/network_screen_20180107.png "Network Monitoring Screen View")
+![alt text](screenshots/network_screen_20180128.png "Network Monitoring Screen View")
 
 ### Coming Soon:
-* HomeAssistant Cloud & Alexa
 * Automation with lights and etc.     
 
 

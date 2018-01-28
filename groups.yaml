@@ -51,12 +51,12 @@ weather:
 
 ## Views
 ## Note: Comment out default_view section to see ALL
-#default_view:
-#  view: yes
-#  icon: mdi:home 
-#  entities:    
-#    - group.weather
-#    - group.family
+default_view:
+  view: yes
+  icon: mdi:home
+  entities:
+    - group.weather
+    - group.family
 light_view:
   view: yes
   icon: mdi:lightbulb
