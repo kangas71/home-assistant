@@ -12,6 +12,7 @@ homeassistant:
   time_zone: America/Denver
   # Include customizations
   customize: !include customize.yaml
+  packages: !include_dir_named packages
 
 # Show links to resources in log and frontend
 #introduction:

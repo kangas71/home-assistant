@@ -7,6 +7,12 @@ device_tracker.rkangasipadpro:
 # Order Groups
 group.weather:
   order: 1
+group.pihole:
+  order: 2
+group.speedtest:
+  order: 3
+group.homeassistant:
+  order: 4
 
 # Lights
 light.ge_zw3106_smart_dimmer_28175_level_1:
@@ -53,17 +59,17 @@ sensor.aeotec_zw096_smart_switch_6_voltage:
   friendly_name: Fan Voltage
   icon: mdi:fan
   hidden: false
-sensor.rkangas_iphone6s_battery_level:
-  friendly_name: iPhone 6s Battery Level
+sensor.external_ip:
+  friendly_name: External IP Address
+  icon: mdi:wan
+  hidden: false
+sensor.rkangas_iPadPro_Battery_Level:
   hidden: true
-sensor.rkangas_iphone6s_battery_state:
-  friendly_name: iPhone 6s Battery State
+sensor.rkangas_iPadPro_Battery_State:
   hidden: true
-sensor.rkangas_ipadpro_battery_level:
-  friendly_name: iPad Pro 10.5 Battery Level
+sensor.rkangas_iPhone6s_Battery_Level:
   hidden: true
-sensor.rkangas_ipadpro_battery_state:
-  friendly_name: iPad Pro 10.5 Battery State
+sensor.rkangas_iPhone6s_Battery_State:
   hidden: true
 sensor.waqi:
   friendly_name: World Air Quality Index

@@ -1,11 +1,4 @@
 ## Groups
-battery:
-  name: Batteries
-  entities:
-    - sensor.rkangas_iphone6s_battery_level
-    - sensor.rkangas_iphone6s_battery_state
-    - sensor.rkangas_ipadpro_battery_level
-    - sensor.rkangas_ipadpro_battery_state
 bedroom1:
   name: Master Bedroom
   entities:
@@ -34,26 +27,13 @@ media_player:
     - media_player.roku_4
     - media_player.apple_tv
     - media_player.chromecast
-netdata:
-  name: NetData
-  entities:
-    - sensor.plex_system_load
-    - sensor.plex_system_io_in
-    - sensor.plex_system_io_out
-    - sensor.omv_system_load
-    - sensor.omv_system_io_in
-    - sensor.omv_system_io_out
-pihole:
-  name: Pi-Hole
-  entities:
-    - sensor.pihole_dns_queries_today
-    - sensor.pihole_ads_blocked_today
 speedtest:
   name: Internet Speeds
   entities:
     - sensor.speedtest_ping
     - sensor.speedtest_download
     - sensor.speedtest_upload
+    - sensor.external_ip
 weather:
   name: Weather
   entities:
@@ -71,12 +51,12 @@ weather:
 
 ## Views
 ## Note: Comment out default_view section to see ALL
-default_view:
-  view: yes
-  icon: mdi:home 
-  entities:    
-    - group.weather
-    - group.family
+#default_view:
+#  view: yes
+#  icon: mdi:home 
+#  entities:    
+#    - group.weather
+#    - group.family
 light_view:
   view: yes
   icon: mdi:lightbulb
@@ -93,10 +73,13 @@ network_view:
   entities:
     - group.battery
     - group.energy
-    - group.netdata
+    - group.homeassistant
+    - group.openmediavault
     - group.pihole
+    - group.plexserver
     - group.speedtest
 settings_view:
   view: yes
   icon: mdi:settings
   entities:
+    - group.update_hass

@@ -1,0 +1,118 @@
+# Server Monitoring Metrics Package
+homeassistant:
+  customize:  
+    package.node_anchors:
+      customize: &customize
+        package: 'servermetrics'
+
+    sensor.plex_swap_free:
+      friendly_name: Swap Free
+      icon: mdi:swap-horizontal
+    sensor.plex_swap_used:
+      friendly_name: Swap Used
+      icon: mdi:swap-horizontal
+    sensor.plex_cpu_iowait:
+      friendly_name: CPU iowait
+      icon: mdi:memory
+    sensor.plex_cpu_system:
+      friendly_name: CPU System
+      icon: mdi:memory
+    sensor.plex_cpu_softirq:
+      friendly_name: CPU SoftIRQ
+      icon: mdi:memory
+    sensor.plex_system_load:
+      friendly_name: System Load
+      icon: mdi:poker-chip
+    sensor.plex_system_io_in:
+      friendly_name: System IO In
+      icon: mdi:upload-network
+    sensor.plex_system_io_out:
+      friendly_name: System IO Out
+      icon: mdi:download-network
+    sensor.plex_uptime:
+      friendly_name: Uptime
+      icon: mdi:clock
+
+    sensor.nas_swap_free:
+      friendly_name: Swap Free
+      icon: mdi:swap-horizontal
+    sensor.nas_swap_used:
+      friendly_name: Swap Used
+      icon: mdi:swap-horizontal
+    sensor.nas_cpu_iowait:
+      friendly_name: CPU iowait
+      icon: mdi:memory
+    sensor.nas_cpu_system:
+      friendly_name: CPU System
+      icon: mdi:memory
+    sensor.nas_cpu_softirq:
+      friendly_name: CPU SoftIRQ
+      icon: mdi:memory
+    sensor.nas_system_load:
+      friendly_name: System Load
+      icon: mdi:poker-chip
+    sensor.nas_system_io_in:
+      friendly_name: System IO In
+      icon: mdi:upload-network
+    sensor.nas_system_io_out:
+      friendly_name: System IO Out
+      icon: mdi:download-network
+    sensor.nas_uptime:
+      friendly_name: Uptime
+      icon: mdi:clock   
+
+group:
+  plexserver:
+    name: Plex Server Metrics
+    entities:
+      - sensor.plex_swap_free
+      - sensor.plex_swap_used
+      - sensor.plex_cpu_iowait
+      - sensor.plex_cpu_system
+      - sensor.plex_cpu_softirq
+      - sensor.plex_system_load
+      - sensor.plex_system_io_in
+      - sensor.plex_system_io_out
+      - sensor.plex_uptime
+
+  openmediavault:
+    name: Open Media Vault Metrics
+    entities:
+      - sensor.nas_swap_free
+      - sensor.nas_swap_used
+      - sensor.nas_cpu_iowait
+      - sensor.nas_cpu_system
+      - sensor.nas_cpu_softirq
+      - sensor.nas_system_load
+      - sensor.nas_system_io_in
+      - sensor.nas_system_io_out
+      - sensor.nas_uptime
+
+sensor:
+  - platform: netdata
+    host: !secret sensor_plex_ip
+    name: Plex
+    resources:
+      - swap_free
+      - swap_used
+      - cpu_iowait
+      - cpu_system
+      - cpu_softirq
+      - system_load
+      - system_io_in
+      - system_io_out
+      - uptime
+
+  - platform: netdata
+    host: !secret sensor_nas_ip
+    name: NAS
+    resources:
+      - swap_free
+      - swap_used
+      - cpu_iowait
+      - cpu_system
+      - cpu_softirq
+      - system_load
+      - system_io_in
+      - system_io_out
+      - uptime

@@ -12,27 +12,11 @@
     - hourly_summary
     - daily_summary
 
-#- platform: netdata
-#  host: !secret sensor_plex_ip
-#  name: plex
-#  resources:
-#    - system_load
-#    - system_io_in
-#    - system_io_out
-
-- platform: netdata
-  host: !secret sensor_omv_ip
-  name: omv
-  resources:
-    - system_load
-    - system_io_in
-    - system_io_out
-
-- platform: pi_hole
-  host: !secret sensor_pihole_ip
-  monitored_conditions:
-    - dns_queries_today
-    - ads_blocked_today
+- platform: rest
+  resource: http://ip.jsontest.com
+  name: external_ip
+  value_template: '{{ value_json.ip }}'
+  scan_interval: 86400
 
 - platform: speedtest
   monitored_conditions:
